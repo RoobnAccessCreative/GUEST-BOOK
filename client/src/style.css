@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Cagliostro&family=Kavivanar&family=Marck+Script&display=swap");
+
+/* Title font */
+.ms {
+  font-family: "Marck Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Body font */
+.kav {
+  font-family: "Kavivanar", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* More accessible title font */
+.cag {
+  font-family: "Cagliostro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --text: hsl(247, 75%, 5%);
+  --background: hsl(45, 100%, 87%);
+  --primary: hsl(137, 38%, 48%);
+  --secondary: hsl(33, 68%, 53%);
+  --accent: hsl(140, 19%, 28%);
+}
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+#app {
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
