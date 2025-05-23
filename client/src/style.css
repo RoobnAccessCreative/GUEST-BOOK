@@ -8,14 +8,16 @@
 }
 
 /* Body font */
-.kav {
+.kav,
+input {
   font-family: "Kavivanar", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
 /* More accessible title font */
-.cag {
+.cag,
+img {
   font-family: "Cagliostro", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -24,9 +26,9 @@
 :root {
   --text: hsl(247, 75%, 5%);
   --background: hsl(45, 100%, 87%);
-  --primary: hsl(137, 38%, 48%);
+  --primary: hsl(140, 19%, 28%);
   --secondary: hsl(33, 68%, 53%);
-  --accent: hsl(140, 19%, 28%);
+  --accent: hsl(137, 38%, 48%);
 }
 
 html,
@@ -37,13 +39,63 @@ body {
   padding: 0;
   background-color: var(--background);
   color: var(--text);
+  overflow-x: hidden;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scrollbar-color: var(--primary) var(--background);
 }
 
 #app {
   width: 100%;
-  height: fit-content;
+  min-height: 100vh;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+#bookInputs {
+  width: 100%;
+  height: 100vh;
+
+  display: grid;
+  grid-template-areas: "image form";
+  grid-template-columns: 50% 50%;
+  align-items: start;
+  justify-items: center;
+}
+
+#heroImage {
+  grid-area: image;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#heroText {
+  grid-area: image;
+  align-self: center;
+
+  height: 70%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#inputHeader,
+#scrollIndicator {
+  background-color: var(--background);
+}
+
+.form-haver {
+  grid-area: form;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary);
+}
+
+@media only screen and (width < 800px) {
 }

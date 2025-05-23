@@ -12,4 +12,4 @@ function submitHandler(e) {
 }
 
 const bookPage = document.querySelector("form");
-bookPage.addEventListener("submit", submitHandler);
+// bookPage.addEventListener("submit", submitHandler);

@@ -11,42 +11,42 @@
   <body>
     <div id="app">
       <div id="bookInputs">
-        <div class="image-haver">
-          <!-- position absolutely for mobile compatibalitly -->
-          <h1 id="inputHeader">Leave a Message</h1>
+        <img src="/cafe-con-cwassorr.jpg" alt="Cafe Scenery" id="heroImage" />
 
-          <img src="" alt="" />
-
-          <!-- position absolutely for mobile compatibalitly -->
-          <div id="scrollIndicator">Scroll</div>
+        <div id="heroText">
+          <h1 id="inputHeader" class="ms">Leave a Message</h1>
+          <h2 id="scrollIndicator" class="ms">Scroll</h2>
         </div>
+
         <div class="form-haver">
           <form>
-            <label for="name"
+            <label for="name" class="kav"
               >Guest Name<input
                 type="text"
                 name="name"
                 placeholder="Eve Cramling"
                 required
             /></label>
-            <label for="message"
+            <label for="message" class="kav"
               >Message<input
                 type="text"
                 name="message"
                 placeholder="Hello there"
                 required
             /></label>
-            <button type="submit">Write</button>
+            <button type="submit" class="ms">Write</button>
           </form>
         </div>
       </div>
       <div id="msgView">
-        <h1 id="responseHeader">View Our Guests</h1>
+        <h1 id="responseHeader" class="ms">View Our Guests</h1>
         <div id="responses"></div>
       </div>
       <footer id="footer">
         <div class="footer-text"></div>
-        <div id="scrollButton"></div>
+        <div id="scrollButton">
+          <img src="" alt="Scroll to Top" />
+        </div>
       </footer>
     </div>
   </body>
